@@ -3,9 +3,6 @@ import './App.css';
 import axios from 'axios'
 import Coin from './Coin';
 
-
-
-
 function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('')
@@ -39,8 +36,13 @@ function App() {
             name={coin.name}
             image={coin.image}
             symbol={coin.symbol}
-            volume={coin.market_cap}
+            marketcap={coin.market_cap}
             price={coin.current_price}
+            priceChange={(
+              typeof coin.price_change_percentage_24h == 'number')
+                ? coin.price_change_percentage_24h.toFixed(2)
+                : coin.price_change_percentage_24h}
+                volume={coin.total_volume}
           />
         );
       })}
