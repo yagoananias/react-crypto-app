@@ -10,11 +10,10 @@
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- [HTML]
-- [CSS]
-- [REACT]
-- [AXIOS]
-- [COIN GECKO API]
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [AXIOS](https://github.com/axios/axios)
+- [COIN GECKO API](https://www.coingecko.com/pt/api)
 
 ## :heavy_check_mark: :computer: Resultado Web
 
